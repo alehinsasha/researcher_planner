@@ -9,4 +9,14 @@
     <value>Исследователь планировщика 1С</value>
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="2d33b42b-3dd8-43c3-88e6-1aa406e5dc1e"/>
+  <defaultForm>ExternalDataProcessor.researcher_planner.Form.Форма</defaultForm>
+  <forms uuid="ae21b089-5ad8-450f-9f66-a9b32de03148">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:ExternalDataProcessor>
