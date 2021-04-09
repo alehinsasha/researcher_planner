@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="add1b38a-c4b3-4576-8635-85bf58cd63f5">
+  <producedTypes>
+    <objectType typeId="11d63149-f9e5-4873-afeb-c8561e5f527a" valueTypeId="5dd93c6d-8db2-4fdd-8257-df1903ba14d7"/>
+  </producedTypes>
+  <name>researcher_planner</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исследователь планировщика 1С</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="2d33b42b-3dd8-43c3-88e6-1aa406e5dc1e"/>
+</mdclass:ExternalDataProcessor>
