@@ -4,7 +4,7 @@
     <name>ГруппаНастройкиИПланировщик</name>
     <id>1</id>
     <items xsi:type="form:FormGroup">
-      <name>СтраницаНастройки</name>
+      <name>ГруппаНастройки</name>
       <id>175</id>
       <items xsi:type="form:FormGroup">
         <name>СтраницаНастройкиОбщие</name>
@@ -828,10 +828,6 @@
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
           </autoCommandBar>
-          <handlers>
-            <event>OnChange</event>
-            <name>ТекущиеПериодыОтображенияПриИзменении</name>
-          </handlers>
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -1554,6 +1550,10 @@
           <items xsi:type="form:FormField">
             <name>ДеревоИзмеренийЗначение</name>
             <id>102</id>
+            <title>
+              <key>ru</key>
+              <value>Измерение / элемент измерения</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1589,61 +1589,6 @@
             <contextMenu>
               <name>ДеревоИзмеренийЗначениеКонтекстноеМеню</name>
               <id>103</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>InputField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <wrap>true</wrap>
-              <chooseType>true</chooseType>
-              <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
-            </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>ДеревоИзмеренийВидЗначенияДереваИзмерений</name>
-            <id>105</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>ДеревоИзмерений.ВидЗначенияДереваИзмерений</segments>
-              </paths>
-              <paths xsi:type="form:DataPath">
-                <segments>ДеревоИзмерений.ВидЗначенияДереваИзмерений</segments>
-              </paths>
-            </dataPath>
-            <extendedTooltip>
-              <name>ДеревоИзмеренийВидЗначенияДереваИзмеренийРасширеннаяПодсказка</name>
-              <id>107</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ДеревоИзмеренийВидЗначенияДереваИзмеренийКонтекстноеМеню</name>
-              <id>106</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1800,10 +1745,6 @@
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
           </autoCommandBar>
-          <handlers>
-            <event>OnChange</event>
-            <name>ДеревоИзмеренийПриИзменении</name>
-          </handlers>
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2057,9 +1998,9 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <listChoiceMode>true</listChoiceMode>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2112,9 +2053,9 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <listChoiceMode>true</listChoiceMode>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2281,54 +2222,6 @@
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
             </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>ДанныеПланировщикаЭтоДанные</name>
-            <id>136</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>ДанныеПланировщика.ЭтоДанные</segments>
-              </paths>
-              <paths xsi:type="form:DataPath">
-                <segments>ДанныеПланировщика.ЭтоДанные</segments>
-              </paths>
-            </dataPath>
-            <extendedTooltip>
-              <name>ДанныеПланировщикаЭтоДанныеРасширеннаяПодсказка</name>
-              <id>138</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ДанныеПланировщикаЭтоДанныеКонтекстноеМеню</name>
-              <id>137</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
           </items>
           <autoCommandBar>
             <name>ДанныеПланировщикаКоманднаяПанель</name>
@@ -2527,10 +2420,6 @@
             </userVisible>
             <horizontalAlign>Left</horizontalAlign>
           </autoCommandBar>
-          <handlers>
-            <event>OnChange</event>
-            <name>ДанныеПланировщикаПриИзменении</name>
-          </handlers>
           <searchStringAddition>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -2726,10 +2615,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Страница настройки</value>
+        <value>Группа настройки</value>
       </title>
       <extendedTooltip>
-        <name>СтраницаНастройкиРасширеннаяПодсказка</name>
+        <name>ГруппаНастройкиРасширеннаяПодсказка</name>
         <id>176</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -3481,6 +3370,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДобавитьИзмерение</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
@@ -3493,6 +3387,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДобавитьЭлементИзмерения</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
@@ -3505,6 +3404,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ДобавитьЭлементПланировщика</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
@@ -3517,6 +3421,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ПривязатьЭлементПланировщикаКИзмерению</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
