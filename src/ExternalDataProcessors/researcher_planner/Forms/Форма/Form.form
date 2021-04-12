@@ -1084,9 +1084,44 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <listChoiceMode>true</listChoiceMode>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Секунда</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Минута</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Час</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>День</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Неделя</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Месяц</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:StringValue">
+                  <value>Квартал</value>
+                </value>
+              </choiceList>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1143,6 +1178,7 @@
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <spinButton>true</spinButton>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
@@ -1199,12 +1235,16 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
+              <handlers>
+                <event>StartChoice</event>
+                <name>ЭлементыШкалыВремениФорматНачалоВыбора</name>
+              </handlers>
               <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
               <wrap>true</wrap>
+              <choiceButton>true</choiceButton>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
-              <textEdit>true</textEdit>
             </extInfo>
           </items>
           <autoCommandBar>
@@ -2652,6 +2692,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Период</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПериодПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ПериодРасширеннаяПодсказка</name>
           <id>9</id>
@@ -2876,6 +2920,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Период</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ВариантПоложенияШкалыВремени</name>
@@ -2894,6 +2941,10 @@
     <edit>
       <common>true</common>
     </edit>
+    <fillChecking>ShowError</fillChecking>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ВариантПоложенияШкалыВремени</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ВариантОтображенияВремениЭлементовПланировщика</name>
@@ -2912,6 +2963,10 @@
     <edit>
       <common>true</common>
     </edit>
+    <fillChecking>ShowError</fillChecking>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ВариантОтображенияВремениЭлементовПланировщика</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ЕдиницаПериодическогоВарианта</name>
@@ -2930,6 +2985,10 @@
     <edit>
       <common>true</common>
     </edit>
+    <fillChecking>ShowError</fillChecking>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ЕдиницаПериодическогоВарианта</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>КратностьПериодическогоВарианта</name>
@@ -2950,6 +3009,10 @@
     <edit>
       <common>true</common>
     </edit>
+    <fillChecking>ShowError</fillChecking>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>КратностьПериодическогоВарианта</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ОтображатьПеренесенныеЗаголовки</name>
@@ -2967,6 +3030,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ОтображатьПеренесенныеЗаголовки</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ОтображатьТекущуюДату</name>
@@ -2984,6 +3050,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ОтображатьТекущуюДату</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ОтображатьПеренесенныеЗаголовкиШкалыВремени</name>
@@ -3001,6 +3070,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ОтображатьПеренесенныеЗаголовкиШкалыВремени</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ВыравниватьГраницыЭлементовПоШкалеВремени</name>
@@ -3018,6 +3090,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ВыравниватьГраницыЭлементовПоШкалеВремени</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ТекущиеПериодыОтображения</name>
@@ -3035,6 +3110,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ТекущиеПериодыОтображения</segments>
+    </settingsSavedData>
     <columns>
       <name>ДатаНачала</name>
       <title>
@@ -3088,6 +3166,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ЭлементыШкалыВремени</segments>
+    </settingsSavedData>
     <columns>
       <name>Единица</name>
       <title>
@@ -3161,6 +3242,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ДеревоИзмерений</segments>
+    </settingsSavedData>
     <columns>
       <name>Значение</name>
       <title>
@@ -3214,6 +3298,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ДанныеПланировщика</segments>
+    </settingsSavedData>
     <columns>
       <name>Измерение</name>
       <title>
